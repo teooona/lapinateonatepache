@@ -3,7 +3,7 @@
 body { background: url('WhatsApp Image 2025-04-27 at 22.15.25.jpeg') no-repeat center center fixed; background-size: cover; }
 
 header {
-  background: #fecd2b;
+  background: #ffffff;
   padding: 10px 30px;
   display: flex;
   justify-content: space-between;
@@ -14,11 +14,8 @@ header {
   z-index: 1000;
 }
 
-.logo img { height: 60px; animation: rotate 6s infinite linear; }
+.logo img { height: 69px; animation: rotate 6s infinite linear; }
 
-.logo h1 {
-    color: #bc4a98;
-}
 
 nav { display: flex; gap: 20px; }
 
@@ -53,15 +50,21 @@ section {
 }
 
 section.home {
-  background: url('home (2).jpg') no-repeat center center fixed;
+  background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczZ0OWczdnR6c3UxeTlkbXphMzR4eHMxa29uYTcwYnNqd3llajg0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MyfJJbjgYRivnYLulm/giphy.gif') no-repeat center center fixed;
   background-size: cover;
   padding-top: 100px;
-  animation: fadeIn 2s ease-in;
 }
 
 section.home h1 {
-  font-size: 50px;
-  background: linear-gradient(to right,#bc4a98, #fecd2b, #fe9ee1);
+  font-size: 100px;
+  background: linear-gradient(to right,#bc4a98, #000000, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section.home h2 {
+  font-size: 35px;
+  background: linear-gradient(to right,#bc4a98, #000000, #bc4a98);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -88,13 +91,32 @@ section.home p{
 .start-button:hover { background: #bc4a98; }
 
 section.about {
-  background-color: #bc4a98;
+    background: url('about (3).gif') no-repeat center center fixed;
+  display: block; 
+  width: 100%;
+  height: 550px;
   color: white;
   padding: 50px;
+  text-align: left;
+
+}
+
+section.about h1 {
+  font-size: 100px;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section.about p {
+  font-size: 130%;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 section.product {
-  background: url('your-product-bg.jpg') no-repeat center center fixed;
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
   background-size: cover;
   flex-wrap: wrap;
   gap: 20px;
@@ -108,7 +130,7 @@ section.product {
 }
 
 .card {
-  background: #fecd2b;
+  background: #ffffff;
   width: 200px;
   padding: 10px;
   border-radius: 15px;
@@ -134,9 +156,26 @@ section.product {
 .card a:hover { background: #bc4a98; }
 
 section.contact {
-  background: #fe9ee1;
+    background: url('https://s4.ezgif.com/tmp/ezgif-4f67453d6bfa9.gif') no-repeat center center fixed;
+    width: 100%;
+  height: 700px;
+
   color: white;
   padding: 50px;
+}
+
+section.contact h1 {
+  font-size: 75px;
+  background: linear-gradient(to right,#000000, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section.contact p {
+  font-size: 30px;
+  background: linear-gradient(to right, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 footer {
