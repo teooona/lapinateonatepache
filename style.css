@@ -1,6 +1,5 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-
-body { background: url('WhatsApp Image 2025-04-27 at 22.15.25.jpeg') no-repeat center center fixed; background-size: cover; }
+body { 
+  background: url('WhatsApp Image 2025-04-27 at 22.15.25.jpeg') no-repeat center center fixed; background-size: cover; }
 
 header {
   background: #ffffff;
