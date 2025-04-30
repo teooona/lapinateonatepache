@@ -24,13 +24,22 @@ header {
 }
 
 .logo img {
-  height: 69px;
+  height: 90px; 
+  font-size: 20px;
   animation: rotate 6s infinite linear;
+  transition: 0.3s;
+}
+
+header .logo:hover{
+    padding-left:40px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 nav {
+  padding:  10px;
   display: flex;
-  gap: 20px;
+  gap: 20px; 
 }
 
 nav a {
@@ -39,6 +48,15 @@ nav a {
   text-decoration: none;
   padding: 8px 15px;
   position: relative;
+}
+
+nav a:hover{
+    color:rgb(92, 18, 5);
+    background-color: #fecd2b;
+    border-radius: 999px; 
+    padding: 8px 15px; 
+    transition: all 0.4s ease;
+    transition: 1s;
 }
 
 nav a::after {
@@ -52,13 +70,11 @@ nav a::after {
   transition: width 0.4s;
 }
 
-nav a:hover::after {
-  width: 100%;
-}
+nav a:hover::after { 
+  width: 100%; }
 
 section {
-  min-height: 100vh;
-  padding-top: 100px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,11 +85,11 @@ section {
 section.home {
   background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczZ0OWczdnR6c3UxeTlkbXphMzR4eHMxa29uYTcwYnNqd3llajg0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MyfJJbjgYRivnYLulm/giphy.gif') no-repeat center center fixed;
   background-size: cover;
+  padding-top: 100px;
 }
 
-@keyframes rotate {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+.home div{
+    margin: 30px;
 }
 
 section.home h1 {
@@ -309,10 +325,11 @@ section.product h1 {
 
 
 section.contact {
-    background: url('contact (8).gif') no-repeat center center fixed;
+    background: url('contact (8) (1).gif') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
   height: 700px;
+  
 
   color: white;
   padding: 50px;
