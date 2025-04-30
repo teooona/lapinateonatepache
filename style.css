@@ -75,3 +75,300 @@ section.home {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
 }
+
+section.home h1 {
+  font-size: 100px;
+  background: linear-gradient(to right,#bc4a98, #000000, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section.home h2 {
+  font-size: 35px;
+  background: linear-gradient(to right,#bc4a98, #000000, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section.home p{
+  font-size: 20px;
+  background: linear-gradient(to right,#bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.start-button {
+  margin-top: 20px;
+  background: #fe9ee1;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-button:hover { 
+  background: #bc4a98; 
+  box-shadow: 0 0 20px #bc4a98;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+section.about {
+  background: url('about (3).gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block; 
+  width: 100%;
+  min-height: 950px;
+  padding: 50px 80px 100px 80px; 
+}
+
+section.about h1 {
+  font-size: 100px;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center
+}
+
+section.about h2 {
+  font-size: 65px;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: left;
+  
+}
+
+section.about h3 {
+  font-size: 100px;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+section.about p {
+  font-size: 30px;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: left;
+}
+
+section.about h1, section.about h2, section.about p {
+  animation: slideUp 1.5s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section.about {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+section.product {
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
+  background-size: cover;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.product h1 {
+  font-size: 100px;
+  background: linear-gradient(to right,#bc4a98, #0000006d, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.5s ease-in-out; 
+}
+
+.card img { width: 100%; border-radius: 10px; }
+
+.card h2 { color: #bc4a98; margin: 10px 0; }
+
+.card p { font-size: 14px; color: #333; }
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #fe9ee1;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.card a:hover { 
+  background: #bc4a98;
+  box-shadow: 0 0 20px #bc4a98;
+  transform: scale(1.2);
+  transition: 0.3s;
+  
+  
+ }
+
+
+ section.locations {
+  background: url('about (3).gif') no-repeat center center fixed;
+  background-size: cover;
+  padding: 100px 50px;
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.locations h1 {
+  font-size: 60px;
+  background: linear-gradient(to right, #ffffff, #fecd2b);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+.locations-content {
+  background: rgba(255, 255, 255, 0.6); 
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.locations-content a {
+  text-decoration: none;
+  color: #bc4a98;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.locations-content a:hover {
+  transform: scale(1.05);
+}
+
+.locations img:first-of-type {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); 
+  border-radius: 20px;
+  animation: floaty 3s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.locations-content img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #fe9ee1;
+  margin-bottom: 10px;
+  box-shadow: 0 0 25px #bc4a98;
+}
+
+.locations-content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+section.contact {
+    background: url('contact (8).gif') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+  height: 700px;
+
+  color: white;
+  padding: 50px;
+}
+
+section.contact h1 {
+  font-size: 73px;
+  background: linear-gradient(to right,#000000, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-right: 3%;
+}
+
+section.contact p {
+  font-size: 30px;
+  background: linear-gradient(to right, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-right: 2%;
+}
+
+footer {
+  background: #fecd2b;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a i {
+  font-size: 40px; 
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+footer a i:hover {
+  color: #fe9ee1;
+  transform: scale(1.2);
+}
+footer a {
+  color: #bc4a98;
+  margin: 0 10px;
+  font-size: 36px; 
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #fe9ee1;
+  transform: scale(1.2);
+} 
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
