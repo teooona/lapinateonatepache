@@ -10,11 +10,6 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background: url('WhatsApp Image 2025-04-27 at 22.15.25.jpeg') no-repeat center center fixed;
-  background-size: cover;
-}
-
 header {
   background: #ffffff;
   padding: 10px 50px;
@@ -207,6 +202,7 @@ section.product {
   background-size: cover;
   flex-wrap: wrap;
   gap: 20px;
+  scroll-margin-top: 150px;
 }
 
 section.product h1 {
@@ -328,6 +324,55 @@ section.product h1 {
 }
 
 
+
+.locations {
+  background: #fff8f8;
+  padding: 50px;
+  text-align: center;
+}
+
+.feedback-form {
+  margin-top: 50px;
+}
+
+.feedback-form h2 {
+  font-size: 30px;
+  color: #bc4a98;
+  margin-bottom: 20px;
+}
+
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.feedback-form input, .feedback-form textarea {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #fe9ee1;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.feedback-form button {
+  background: #fe9ee1;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background: #bc4a98;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
 section.contact {
     background: url('contact (8) (1).gif') no-repeat center center fixed;
     background-size: cover;
@@ -354,6 +399,7 @@ section.contact p {
   color: transparent;
   margin-right: 2%;
 }
+
 
 footer {
   background: #fecd2b;
@@ -393,3 +439,57 @@ footer a:hover {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
 }
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: 0.5s;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+  width: 500px;
+  max-width: 90%;
+  animation: zoomIn 0.5s;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 40px;
+  color: #333;
+  cursor: pointer;
+}
+
+.popup img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+
+#popup-toggle:not(:checked) ~ .popup {
+  display: none;
+}
+
