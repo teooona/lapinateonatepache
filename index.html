@@ -5,12 +5,506 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Piña Teona Tepache</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="assets/images/fc4261fbc-7f3f-4b44-beff-8f00d945bc37-removebg-preview.png">
-
+  <link rel="icon" type="image/png" href="fc4261fbc-7f3f-4b44-beff-8f00d945bc37-removebg-preview.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<style>
+    html {
+  scroll-behavior: smooth;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+  background: #ffffff;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 90px; 
+  font-size: 20px;
+  animation: rotate 6s infinite linear;
+  transition: 0.3s;
+}
+
+header .logo:hover{
+    padding-left:40px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav {
+  padding:  10px;
+  display: flex;
+  gap: 20px; 
+}
+
+nav a {
+  color: #bc4a98;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 15px;
+  position: relative;
+}
+
+nav a:hover{
+    color:rgb(92, 18, 5);
+    background-color: #fecd2b;
+    border-radius: 999px; 
+    padding: 8px 15px; 
+    transition: all 0.4s ease;
+    transition: 1s;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #fe9ee1;
+  transition: width 0.4s;
+}
+
+nav a:hover::after { 
+  width: 100%; }
+
+section {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.home {
+  background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczZ0OWczdnR6c3UxeTlkbXphMzR4eHMxa29uYTcwYnNqd3llajg0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MyfJJbjgYRivnYLulm/giphy.gif') no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.home div{
+    margin: 30px;
+}
+
+section.home h1 {
+  font-size: 100px;
+  background: linear-gradient(to right,#bc4a98, #000000, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section.home h2 {
+  font-size: 35px;
+  background: linear-gradient(to right,#bc4a98, #000000, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section.home p{
+  font-size: 20px;
+  background: linear-gradient(to right,#bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.start-button {
+  margin-top: 20px;
+  background: #fe9ee1;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-button:hover { 
+  background: #fecd2b; 
+  box-shadow: 0 0 20px #fecd2b;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+section.about {
+  background: url('about (3).gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block; 
+  width: 100%;
+  min-height: 950px;
+  padding: 50px 80px 100px 80px; 
+}
+
+section.about h1 {
+  font-size: 100px;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center
+}
+
+section.about h2 {
+  font-size: 65px;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: left;
+  
+}
+
+section.about h3 {
+  font-size: 100px;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+section.about p {
+  font-size: 30px;
+  background: linear-gradient(to right,hwb(43 0% 0%), #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: left;
+}
+
+section.about h1, section.about h2, section.about p {
+  animation: slideUp 1.5s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section.about {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+section.product {
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
+  background-size: cover;
+  flex-wrap: wrap;
+  gap: 20px;
+  scroll-margin-top: 150px;
+}
+
+section.product h1 {
+  font-size: 100px;
+  background: linear-gradient(to right,#bc4a98, #0000006d, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.5s ease-in-out; 
+}
+
+.card img { width: 100%; border-radius: 10px; }
+
+.card h2 { color: #bc4a98; margin: 10px 0; }
+
+.card p { font-size: 14px; color: #333; }
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #fe9ee1;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.card a:hover { 
+  background: #bc4a98;
+  box-shadow: 0 0 20px #bc4a98;
+  transform: scale(1.2);
+  transition: 0.3s;
+  
+  
+ }
+
+
+ section.locations {
+  background: url('about (3).gif') no-repeat center center fixed;
+  background-size: cover;
+  padding: 100px 50px;
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.locations h1 {
+  font-size: 60px;
+  background: linear-gradient(to right, #ffffff, #fecd2b);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+.locations-content {
+  background: rgba(255, 255, 255, 0.6); 
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.locations-content a {
+  text-decoration: none;
+  color: #bc4a98;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.locations-content a:hover {
+  transform: scale(1.05);
+}
+
+.locations img:first-of-type {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); 
+  border-radius: 20px;
+  animation: floaty 3s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.locations-content img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #fe9ee1;
+  margin-bottom: 10px;
+  box-shadow: 0 0 25px #bc4a98;
+}
+
+.locations-content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+.locations {
+  background: #fff8f8;
+  padding: 50px;
+  text-align: center;
+}
+
+.feedback-form {
+  margin-top: 50px;
+}
+
+.feedback-form h2 {
+  font-size: 30px;
+  color: #bc4a98;
+  margin-bottom: 20px;
+}
+
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.feedback-form input, .feedback-form textarea {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #fe9ee1;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.feedback-form button {
+  background: #fe9ee1;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background: #bc4a98;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+section.contact {
+    background: url('contactz.gif') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+  height: 700px;
+    color: white;
+  padding: 50px;
+}
+
+section.contact h1 {
+  font-size: 73px;
+  background: linear-gradient(to right,#000000, #bc4a98);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-right: 3%;
+}
+
+section.contact p {
+  font-size: 30px;
+  background: linear-gradient(to right, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-right: 2%;
+}
+
+
+footer {
+  background: #fecd2b;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a i {
+  font-size: 40px; 
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+footer a i:hover {
+  color: #fe9ee1;
+  transform: scale(1.2);
+}
+footer a {
+  color: #bc4a98;
+  margin: 0 10px;
+  font-size: 36px; 
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #fe9ee1;
+  transform: scale(1.2);
+} 
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: 0.5s;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+  width: 500px;
+  max-width: 90%;
+  animation: zoomIn 0.5s;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 40px;
+  color: #333;
+  cursor: pointer;
+}
+
+.popup img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+
+#popup-toggle:not(:checked) ~ .popup {
+  display: none;
+}
+
+
+</style>
   <input type="checkbox" id="popup-toggle" checked hidden>
 
 <div class="popup">
@@ -30,8 +524,6 @@
     <a href="#product">Products</a>
     <a href="#locations">Locations</a>
     <a href="#contact">Contact</a>
-    
-
    
   </nav>
 </header>
