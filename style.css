@@ -374,13 +374,13 @@ section.product h1 {
 
 
 section.contact {
-    background: url('contact (8) (1).gif') no-repeat center center fixed;
+    background: url('contactz.gif') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
   height: 700px;
     color: white;
   padding: 50px;
-  margin-bottom: 48px;
+
 }
 
 section.contact h1 {
