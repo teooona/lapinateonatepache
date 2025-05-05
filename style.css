@@ -223,28 +223,23 @@ section.product h1 {
   transition: all 0.5s ease-in-out; 
 }
 
-section.product h2 {
-  font-size: 80px;
-  background: linear-gradient(to right, hwb(43 0% 0%), #ffffff, #bc4a98);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
-
 .card:hover {
   transform: scale(1.05);
 }
 
 
 
-.card img { width: 100%; border-radius: 10px; }
+.card img { 
+  width: 200%;
+  border-radius: 10px; }
 
-.card h2 { color: #bc4a98; margin: 10px 0; }
+.card h2 {
+  color: #bc4a98;
+  margin: 10px 0; }
 
-.card p { font-size: 14px; color: #333; }
+.card p {
+  font-size: 14px;
+  color: #333; }
 
 .card a {
   display: inline-block;
