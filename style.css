@@ -203,6 +203,7 @@ section.product {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 section.product h2 {
@@ -224,11 +225,12 @@ section.product h2 {
   justify-items: center;
 }
 
+
 .card {
   background: #ffffff;
   width: 100%;
   max-width: 250px;
-  padding: 15px;
+  padding: 5px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
