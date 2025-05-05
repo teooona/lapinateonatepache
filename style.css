@@ -58,16 +58,7 @@ nav a:hover{
     transition: 1s;
 }
 
-nav a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background: #fe9ee1;
-  transition: width 0.4s;
-}
+
 
 nav a:hover::after { 
   width: 100%; }
