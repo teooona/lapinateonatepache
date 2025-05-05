@@ -193,36 +193,57 @@ section.about {
 
 section.product {
   background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
-  width: 100vw;
-  padding: 80px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
+  background-size: cover;
+  flex-wrap: wrap;
+  gap: 20px;
+  scroll-margin-top: 150px;
 }
 
 section.product h1 {
-  font-size: 50px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  font-size: 100px;
   background: linear-gradient(to right,#bc4a98, #0000006d, #bc4a98);
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.product-container {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  padding: 40px 20px;
-}
-
-.product-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
+.card {
+  background: #ffffff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img { width: 100%; border-radius: 10px; }
+
+.card h2 { color: #bc4a98; margin: 10px 0; }
+
+.card p { font-size: 14px; color: #333; }
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #fe9ee1;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.card a:hover { 
+  background: #bc4a98;
+  box-shadow: 0 0 20px #bc4a98;
+  transform: scale(1.2);
+  transition: 0.3s;
+ }
 
 .card {
   background: white;
@@ -232,6 +253,10 @@ section.product h1 {
   width: 250px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card h2 {
@@ -253,37 +278,6 @@ section.product h1 {
 }
 
 
-.card img {
-  max-height: 180px;
-  object-fit: contain;
-  background: white;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-
-.card a {
-  font-size: 13px;
-  padding: 5px 10px;
-  display: inline-block;
-  margin-top: 10px;
-  background: #fe9ee1;
-  color: white;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 12px;
-  padding: 4px 8px;
-}
-
-.card a:hover { 
-  background: #bc4a98;
-  box-shadow: 0 0 20px #bc4a98;
-  transform: scale(1.2);
-  transition: 0.3s;
-  
-  
- }
 
 
  section.locations {
