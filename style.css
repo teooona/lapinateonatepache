@@ -197,14 +197,6 @@ section.product {
   flex-wrap: wrap;
   gap: 20px;
   scroll-margin-top: 150px;
-  min-height: 100vh;
-  padding: 100px 50px;
-  background-color: #fff;
-  display: block;
-  flex-direction: column;
-  align-items: center;
-
-  
   
 }
 
