@@ -192,12 +192,11 @@ section.about {
 
 
 section.product {
-    background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
   background-size: cover;
   flex-wrap: wrap;
   gap: 20px;
   scroll-margin-top: 150px;
-  
 }
 
 section.product h1 {
@@ -226,8 +225,6 @@ section.product h1 {
 .card:hover {
   transform: scale(1.05);
 }
-
-
 
 .card img { 
   width: 200%;
