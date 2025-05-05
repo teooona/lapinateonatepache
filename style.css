@@ -11,7 +11,8 @@ html {
 
 
 header {
-    background-color: white;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px);
   opacity: 0,1%; 
   position: fixed;
   padding: 10px 50px;
@@ -193,7 +194,7 @@ section.about {
 section.product {
   background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
   background-size: cover;
-  min-height: 1000px
+  min-height: 1500px
   scroll-margin-top: 70px;
   display: flex;
   flex-direction: column;
