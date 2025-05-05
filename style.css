@@ -197,6 +197,11 @@ background-size: cover;
 flex-wrap: wrap;
 gap: 20px;
 scroll-margin-top: 150px;
+width: 100%;
+min-height: 950px;
+padding: 50px 80px 100px 80px;
+
+
 }
 
 section.product h1 {
