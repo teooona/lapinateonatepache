@@ -195,7 +195,7 @@ section.product {
   background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
-  padding: 100px 50px;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,24 +203,24 @@ section.product {
 }
 
 section.product h1 {
-  font-size: 80px;
+  font-size: 50px;
+  margin-bottom: 30px;
   background: linear-gradient(to right,#bc4a98, #0000006d, #bc4a98);
   -webkit-background-clip: text;
   color: transparent;
-  margin-bottom: 60px;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  max-width: 1200px;
+  gap: 20px;
+  max-width: 900px;   
   width: 100%;
 }
 
 .card {
   background: #ffffff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: all 0.3s ease-in-out;
@@ -234,25 +234,26 @@ section.product h1 {
 
 
 .card img {
+  max-height: 180px;
+  object-fit: contain;
+  background: white;
   width: 100%;
   height: auto;
-  object-fit: contain;
   border-radius: 10px;
 }
 
 
-
-
 .card p {
-  font-size: 14px;
+  font-size: 13px;
   color: #333; }
 
 .card a {
+  font-size: 13px;
+  padding: 5px 10px;
   display: inline-block;
   margin-top: 10px;
   background: #fe9ee1;
   color: white;
-  padding: 5px 15px;
   border-radius: 20px;
   text-decoration: none;
 }
