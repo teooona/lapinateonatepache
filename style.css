@@ -45,26 +45,24 @@ nav {
   gap: 20px; 
 }
 
+
 nav a {
   color: #bc4a98;
   font-weight: bold;
-  text-decoration: none;
-  padding: 8px 15px;
   position: relative;
-}
-
-nav a {
-  position: relative;
-  padding: 10px;
+  padding: 10px 15px;
   color: black;
   text-decoration: none;
   transition: 0.3s;
+  border-radius: 30px;
 }
 
 nav a:hover {
-  color: #FFD700; 
+  color: white;
+  background: #FFD700; 
+  border-radius: 30px;
+  box-shadow: 0 0 15px #FFD700;
 }
-
 
 
 section {
