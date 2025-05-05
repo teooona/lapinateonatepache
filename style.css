@@ -194,7 +194,7 @@ section.product {
   background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
-  padding-top: 140px;
+  padding-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,6 +203,7 @@ section.product {
 
 section.product h1 {
   font-size: 50px;
+  margin-top: 50px;
   margin-bottom: 30px;
   background: linear-gradient(to right,#bc4a98, #0000006d, #bc4a98);
   -webkit-background-clip: text;
