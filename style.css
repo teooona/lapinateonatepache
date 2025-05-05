@@ -195,7 +195,7 @@ section.product {
   background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY1NWJkajNyMmVlcDd4bzh4MnkzY3M2ZjEwZWxtOWo5YjMyZ3l4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qv8egBLWW7Nnj8JVMy/giphy.gif') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
-  padding: 60px 20px;
+  padding-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,12 +220,27 @@ section.product h1 {
 
 .card {
   background: #ffffff;
-  padding: 15px;
+  padding: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: all 0.3s ease-in-out;
   text-align: center;
+  max-width: 220px;
+  margin: auto; 
 }
+
+.card h2 {
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card h3 {
+  font-size: 14px;
+}
+
 
 
 .card:hover {
@@ -243,10 +258,6 @@ section.product h1 {
 }
 
 
-.card p {
-  font-size: 13px;
-  color: #333; }
-
 .card a {
   font-size: 13px;
   padding: 5px 10px;
@@ -256,6 +267,8 @@ section.product h1 {
   color: white;
   border-radius: 20px;
   text-decoration: none;
+  font-size: 12px;
+  padding: 4px 8px;
 }
 
 .card a:hover { 
