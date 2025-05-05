@@ -60,9 +60,6 @@ nav a:hover{
 
 
 
-nav a:hover::after { 
-  width: 100%; }
-
 section {
   height: 600px;
   display: flex;
