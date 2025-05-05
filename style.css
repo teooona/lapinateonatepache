@@ -218,6 +218,11 @@ section.product h1 {
   padding: 40px 20px;
 }
 
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
 .card {
   background: white;
